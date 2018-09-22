@@ -2314,7 +2314,8 @@ textarea.form-control {
   }
 }
 
-.btn {
+a.btn.disabled,
+fieldset:disabled a.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-light, .btn-dark, .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-danger, .btn-outline-light, .btn-outline-dark, .btn-link, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn, .btn-block {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -2334,26 +2335,34 @@ textarea.form-control {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .btn {
+  a.btn.disabled,
+  fieldset:disabled a.btn, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-light, .btn-dark, .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info, .btn-outline-warning, .btn-outline-danger, .btn-outline-light, .btn-outline-dark, .btn-link, .btn-lg, .btn-group-lg > .btn, .btn-sm, .btn-group-sm > .btn, .btn-block {
     transition: none;
   }
 }
 
-.btn:hover, .btn:focus {
+a.btn.disabled:hover,
+fieldset:disabled a.btn:hover, .btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-info:hover, .btn-warning:hover, .btn-danger:hover, .btn-light:hover, .btn-dark:hover, .btn-outline-primary:hover, .btn-outline-secondary:hover, .btn-outline-success:hover, .btn-outline-info:hover, .btn-outline-warning:hover, .btn-outline-danger:hover, .btn-outline-light:hover, .btn-outline-dark:hover, .btn-link:hover, .btn-lg:hover, .btn-group-lg > .btn:hover, .btn-sm:hover, .btn-group-sm > .btn:hover, .btn-block:hover, a.btn.disabled:focus,
+fieldset:disabled a.btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-success:focus, .btn-info:focus, .btn-warning:focus, .btn-danger:focus, .btn-light:focus, .btn-dark:focus, .btn-outline-primary:focus, .btn-outline-secondary:focus, .btn-outline-success:focus, .btn-outline-info:focus, .btn-outline-warning:focus, .btn-outline-danger:focus, .btn-outline-light:focus, .btn-outline-dark:focus, .btn-link:focus, .btn-lg:focus, .btn-group-lg > .btn:focus, .btn-sm:focus, .btn-group-sm > .btn:focus, .btn-block:focus {
   color: #212529;
   text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
+a.btn.disabled:focus,
+fieldset:disabled a.btn:focus, .btn-primary:focus, .btn-secondary:focus, .btn-success:focus, .btn-info:focus, .btn-warning:focus, .btn-danger:focus, .btn-light:focus, .btn-dark:focus, .btn-outline-primary:focus, .btn-outline-secondary:focus, .btn-outline-success:focus, .btn-outline-info:focus, .btn-outline-warning:focus, .btn-outline-danger:focus, .btn-outline-light:focus, .btn-outline-dark:focus, .btn-link:focus, .btn-lg:focus, .btn-group-lg > .btn:focus, .btn-sm:focus, .btn-group-sm > .btn:focus, .btn-block:focus, a.focus.btn.disabled,
+fieldset:disabled a.focus.btn, .focus.btn-primary, .focus.btn-secondary, .focus.btn-success, .focus.btn-info, .focus.btn-warning, .focus.btn-danger, .focus.btn-light, .focus.btn-dark, .focus.btn-outline-primary, .focus.btn-outline-secondary, .focus.btn-outline-success, .focus.btn-outline-info, .focus.btn-outline-warning, .focus.btn-outline-danger, .focus.btn-outline-light, .focus.btn-outline-dark, .focus.btn-link, .focus.btn-lg, .btn-group-lg > .focus.btn, .focus.btn-sm, .btn-group-sm > .focus.btn, .focus.btn-block {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled, .btn:disabled {
+a.disabled.btn,
+fieldset:disabled a.disabled.btn, .disabled.btn-primary, .disabled.btn-secondary, .disabled.btn-success, .disabled.btn-info, .disabled.btn-warning, .disabled.btn-danger, .disabled.btn-light, .disabled.btn-dark, .disabled.btn-outline-primary, .disabled.btn-outline-secondary, .disabled.btn-outline-success, .disabled.btn-outline-info, .disabled.btn-outline-warning, .disabled.btn-outline-danger, .disabled.btn-outline-light, .disabled.btn-outline-dark, .disabled.btn-link, .disabled.btn-lg, .btn-group-lg > .disabled.btn, .disabled.btn-sm, .btn-group-sm > .disabled.btn, .disabled.btn-block, a.btn.disabled:disabled,
+fieldset:disabled a.btn:disabled, .btn-primary:disabled, .btn-secondary:disabled, .btn-success:disabled, .btn-info:disabled, .btn-warning:disabled, .btn-danger:disabled, .btn-light:disabled, .btn-dark:disabled, .btn-outline-primary:disabled, .btn-outline-secondary:disabled, .btn-outline-success:disabled, .btn-outline-info:disabled, .btn-outline-warning:disabled, .btn-outline-danger:disabled, .btn-outline-light:disabled, .btn-outline-dark:disabled, .btn-link:disabled, .btn-lg:disabled, .btn-group-lg > .btn:disabled, .btn-sm:disabled, .btn-group-sm > .btn:disabled, .btn-block:disabled {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled) {
+a.btn.disabled:not(:disabled):not(.disabled),
+fieldset:disabled a.btn:not(:disabled):not(.disabled), .btn-primary:not(:disabled):not(.disabled), .btn-secondary:not(:disabled):not(.disabled), .btn-success:not(:disabled):not(.disabled), .btn-info:not(:disabled):not(.disabled), .btn-warning:not(:disabled):not(.disabled), .btn-danger:not(:disabled):not(.disabled), .btn-light:not(:disabled):not(.disabled), .btn-dark:not(:disabled):not(.disabled), .btn-outline-primary:not(:disabled):not(.disabled), .btn-outline-secondary:not(:disabled):not(.disabled), .btn-outline-success:not(:disabled):not(.disabled), .btn-outline-info:not(:disabled):not(.disabled), .btn-outline-warning:not(:disabled):not(.disabled), .btn-outline-danger:not(:disabled):not(.disabled), .btn-outline-light:not(:disabled):not(.disabled), .btn-outline-dark:not(:disabled):not(.disabled), .btn-link:not(:disabled):not(.disabled), .btn-lg:not(:disabled):not(.disabled), .btn-group-lg > .btn:not(:disabled):not(.disabled), .btn-sm:not(:disabled):not(.disabled), .btn-group-sm > .btn:not(:disabled):not(.disabled), .btn-block:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 

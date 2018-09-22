@@ -4,7 +4,7 @@
 // Base styles
 //
 
-.btn {
+%btn {
   display: inline-block;
   font-weight: $btn-font-weight;
   color: $body-color;
@@ -53,6 +53,7 @@
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
 fieldset:disabled a.btn {
+  @extend %btn;
   pointer-events: none;
 }
 
@@ -63,12 +64,14 @@ fieldset:disabled a.btn {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
+    @extend %btn;
     @include button-variant($value, $value);
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
+    @extend %btn;
     @include button-outline-variant($value);
   }
 }
@@ -80,6 +83,7 @@ fieldset:disabled a.btn {
 
 // Make a button look and behave like a link
 .btn-link {
+  @extend %btn;
   font-weight: $font-weight-normal;
   color: $link-color;
 
@@ -109,10 +113,12 @@ fieldset:disabled a.btn {
 //
 
 .btn-lg {
+  @extend %btn;
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
+  @extend %btn;
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
@@ -122,6 +128,7 @@ fieldset:disabled a.btn {
 //
 
 .btn-block {
+  @extend %btn;
   display: block;
   width: 100%;
 
